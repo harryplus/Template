@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Template</string>
+    <string name="bottom_layout_main">主页</string>
+    <string name="bottom_layout_health">健康</string>
+    <string name="bottom_layout_message">消息</string>
+    <string name="bottom_layout_center">中心</string>
+    <string name="load_failed">加载失败，点我重试。</string>
+    <string name="loading">正在加载....</string>
+    <string name="error_net_disconn">网络连接断开,请检查网络连接!</string>
+</resources>

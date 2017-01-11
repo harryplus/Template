@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="selectable_item_background_general_dark_normal">#ff3c3c3c</color>
+    <color name="selectable_item_background_general_dark_pressed">#ff444444</color>
+    <color name="selectable_item_background_general_light_normal">@android:color/white</color>
+    <color name="selectable_item_background_general_light_pressed">#ffeeeeee</color>
+    <color name="theme_black_7f">#8f000000</color>
+    <color name="tab_unselect">#c9c9c9</color>
+</resources>
