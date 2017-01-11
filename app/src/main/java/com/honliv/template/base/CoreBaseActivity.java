@@ -16,7 +16,6 @@ import android.widget.RelativeLayout;
 
 import com.honliv.template.R;
 import com.honliv.template.application.MyApplication;
-import com.honliv.template.helper.AppManager;
 import com.honliv.template.utils.SpUtil;
 import com.honliv.template.utils.TUtil;
 import com.honliv.template.utils.ThemeUtil;
@@ -81,13 +80,13 @@ public abstract class CoreBaseActivity<T extends CoreBasePresenter, E extends Co
         mModel = TUtil.getT(this, 1);
         if (this instanceof CoreBaseView) mPresenter.attachVM(this, mModel);
         this.initView(savedInstanceState);
-        AppManager.getAppManager().addActivity(this);
+        MyApplication.getInstance().addActivity(this);
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        AppManager.getAppManager().finishActivity(this);
+        MyApplication.getInstance().removeActivity(this);
         if (binder != null) binder.unbind();
         if (mPresenter != null) mPresenter.detachVM();
     }
