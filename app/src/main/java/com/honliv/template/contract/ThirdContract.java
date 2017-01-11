@@ -19,7 +19,7 @@ public interface ThirdContract {
     interface ThirdModel extends CoreBaseModel {
     }
 
-    public interface ThirdMainModel extends CoreBaseModel {
+    interface ThirdMainModel extends CoreBaseModel {
     }
 
     abstract class ThirdPresenter extends CoreBasePresenter<ThirdModel, ThirdView> {
